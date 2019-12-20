@@ -1,11 +1,11 @@
 <!--component/component-scroll/index.wxml-->
 <view class='my-scroll'>
-  <scroll-view  tt:if="isNeedLoadmore" style='height: 100%;' scroll-y bindscroll="scroll" bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd' bindscrolltolower="loadmore">
+  <scroll-view tt:if="isNeedLoadmore" style='height: 100%;' scroll-y bindscroll="scroll" bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd' bindscrolltolower="loadmore">
     <view class='my-scroll-msgModule my-scroll-refreshModule' style='height:{{refreshHeight+"px"}};line-height:{{pulldownDistance+"px"}}'>
       <view class='my-scroll-refreshModule-content'>
-        <image  tt:if="refreshText==refreshPulldownText" class='my-scroll-msgModule-icon' src='../../image/arrow-down.png'></image>
-        <image  tt:elif="refreshText==refreshUndoText" class='my-scroll-msgModule-icon' src='../../image/arrow-top.png'></image>
-        <image  tt:elif="refreshText==refreshLoadingText" class='my-scroll-msgModule-icon my-scroll-msgModule-icon-loading' src='../../image/loading.png'></image>
+        <image tt:if="refreshText==refreshPulldownText" class='my-scroll-msgModule-icon' src='../../image/arrow-down.png'></image>
+        <image tt:elif="refreshText==refreshUndoText" class='my-scroll-msgModule-icon' src='../../image/arrow-top.png'></image>
+        <image tt:elif="refreshText==refreshLoadingText" class='my-scroll-msgModule-icon my-scroll-msgModule-icon-loading' src='../../image/loading.png'></image>
         <text style="color:red" class='my-scroll-msgModule-text'>{{refreshText}}</text>
       </view>
     </view>
@@ -16,13 +16,13 @@
     </view>
   </scroll-view>
 
-  <scroll-view  tt:else style='height: 100%;' scroll-y bindscroll="scroll" bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd'>
+  <scroll-view tt:else style='height: 100%;' scroll-y bindscroll="scroll" bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd'>
     <view class='my-scroll-msgModule my-scroll-refreshModule' style='height:{{refreshHeight+"px"}};line-height:{{pulldownDistance+"px"}}'>
       <view class='my-scroll-refreshModule-content'>
         <image tt:if="refreshText==refreshPulldownText" class='my-scroll-msgModule-icon' src='../../image/arrow-down.png'></image>
         <image tt:elif="refreshText==refreshUndoText" class='my-scroll-msgModule-icon' src='../../image/arrow-top.png'></image>
-        <image  tt:elif="refreshText==refreshLoadingText" class='my-scroll-msgModule-icon my-scroll-msgModule-icon-loading' src='../../image/loading.png'></image>
-        <text style="color:red"  class='my-scroll-msgModule-text'>111{{refreshText}}</text>
+        <image tt:elif="refreshText==refreshLoadingText" class='my-scroll-msgModule-icon my-scroll-msgModule-icon-loading' src='../../image/loading.png'></image>
+        <text style="color:red"  class='my-scroll-msgModule-text'>{{refreshText}}</text>
       </view>
     </view>
     <slot></slot>

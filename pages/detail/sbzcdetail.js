@@ -1,7 +1,3 @@
-
-
-
-
 var util = require('../../utils/util.js');
 var network_util = require('../../utils/network_util.js');
 var json_util = require('../../utils/json_util.js');
@@ -43,7 +39,8 @@ Page({
       newsContent: res.newsContent,
     })
 
-    
+   
+   
       }).catch((res) => { console.log(res) })
 
 

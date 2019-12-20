@@ -13,6 +13,8 @@
             <text>{{publishDateString}}</text>
           </view>
         </view>
+   
+     
       </view>
 
     </view>
@@ -22,10 +24,6 @@
 <view tt:else class='contentclass'>
   暂无
 </view>
-    
-    
-
-
 
 
 

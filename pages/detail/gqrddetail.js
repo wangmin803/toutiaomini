@@ -1,7 +1,4 @@
 
-
-
-
 var util = require('../../utils/util.js');
 var network_util = require('../../utils/network_util.js');
 var json_util = require('../../utils/json_util.js');
@@ -33,8 +30,9 @@ Page({
     let d = "";
     var url1 = 'https://www.jzn360.com/getnews.do?id='+this.data.id; 
     var that= this;
+    console.log("xxxxxxxxxxxxx");
   network_util._getnet(url1,d).then((res) => { 
-
+console.log("ddddddddddddddddddddddddddddddddddddddd");
         that.setData({      
     //把引入的数据根据下标对应放到detailObj中
       id:res.id,
@@ -42,8 +40,7 @@ Page({
       publishDateString:  res.publishDateString.substring(0,12),
       newsContent: res.newsContent,
     })
-
-    
+console.log(res.newsContent);
       }).catch((res) => { console.log(res) })
 
 

@@ -1,12 +1,14 @@
 //app.js
+var util = require('./utils/util.js');
+var network_util = require('./utils/network_util.js');
+var json_util = require('./utils/json_util.js');
 App({
-
+ 
+  
+ 
   onLaunch: function () {   },
-  onShow: function () {
 
-   
-
-   
+  onShow: function () {   
     },
 
   goContactus: function () {
@@ -28,15 +30,7 @@ App({
           url: '../gxrd/gxrd'
         });
   },
-      goDetail: function (id,tname) {
 
-
-
-         tt.navigateTo({
-        url: '../detail/detail?id='+id+'&tname='+tname
-     });
-      
-  },
 
         goMoreList: function (type) {
             if(type=='gxrd'){

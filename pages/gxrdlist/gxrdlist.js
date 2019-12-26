@@ -20,11 +20,14 @@ Page({
     onLoad: function (options) {
         console.log(options.type);
         type = options.type;
+        console.log("aaaaaa"+type);
+      
+           
     },
 
     onShow() {
         this.getList();
-   
+        
 
     },
     onUnload: function () {
@@ -36,13 +39,18 @@ Page({
 
 
     goDetail: function (e) {
-    
 
        tt.navigateTo({
-         url: '../detail/' + e.currentTarget.dataset.channel + 'detail?id=' + e.currentTarget.dataset.id + '&tname=' + e.currentTarget.dataset.tname
+         url: '../detail/' + e.currentTarget.dataset.channel + 'detail?id=' + e.currentTarget.dataset.id
        });
       
-      console.log('../detail/' + e.currentTarget.dataset.channel + 'detail?id=' + e.currentTarget.dataset.id) ;
+
+
+
+
+
+
+
 
 
     },

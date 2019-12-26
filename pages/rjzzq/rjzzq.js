@@ -18,13 +18,13 @@ Page({
     onShow: function() {
         // 监听页面显示的生命周期函数
               
-       tt.setNavigationBarTitle({
-          title: "山西注册商标,太原商标注册"
+     tt.setNavigationBarTitle({
+          title: "山西软件著作权,太原软件著作权,软件著作权申请,软件著作权办理"
       })
     },
     
-    goMoredSbzc: function () {
-    app.goMoreList('sbzc');
+    goMoredRjzzq: function () {
+    app.goMoreList('rjzzq');
   },
     onHide: function() {
         // 监听页面隐藏的生命周期函数

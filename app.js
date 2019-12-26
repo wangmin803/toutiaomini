@@ -8,7 +8,13 @@ App({
  
   onLaunch: function () {   },
 
-  onShow: function () {   
+  onShow: function () {
+
+       
+
+ 
+
+   
     },
 
   goContactus: function () {
@@ -33,7 +39,7 @@ App({
 
 
         goMoreList: function (type) {
-            if(type=='gxrd'){
+            if(type=='gqrd'){
                tt.navigateTo({
                         url: '../gxrdlist/gxrdlist?type=gqrd'
                     });``
@@ -41,6 +47,11 @@ App({
               if(type=='sbzc'){
                tt.navigateTo({
                         url: '../gxrdlist/gxrdlist?type=sbzc'
+                    });``
+            }
+                if(type=='rjzzq'){
+               tt.navigateTo({
+                        url: '../gxrdlist/gxrdlist?type=rjzzq'
                     });``
             }
        

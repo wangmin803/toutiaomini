@@ -1,6 +1,4 @@
 /*文章明细*/
-
-
 .feed-item {
   padding: 30rpx 30rpx 20rpx;
   margin: 0rpx 0 0 0;

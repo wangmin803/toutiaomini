@@ -7,7 +7,7 @@ Page({
   onLoad: function () {},
     onShow: function () {
 
-  
+       
      
     },
   goContactus: function () {

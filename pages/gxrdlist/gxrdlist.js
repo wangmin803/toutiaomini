@@ -26,8 +26,14 @@ Page({
     },
 
     onShow() {
+        app.setNbt(type);
+     
+      
+
         this.getList();
         
+        
+     
 
     },
     onUnload: function () {
@@ -40,9 +46,19 @@ Page({
 
     goDetail: function (e) {
 
-       tt.navigateTo({
-         url: '../detail/' + e.currentTarget.dataset.channel + 'detail?id=' + e.currentTarget.dataset.id
-       });
+        if(e.currentTarget.dataset.channel=='ruanzhujiaji'||e.currentTarget.dataset.channel=='ruanzhushenqing'||e.currentTarget.dataset.channel=='ruanzhudaiban'||e.currentTarget.dataset.channel=='ruanzhubanli'){
+            tt.navigateTo({
+                url: '../detail/' + e.currentTarget.dataset.channel + '/'+ e.currentTarget.dataset.channel+'?id=' + e.currentTarget.dataset.id
+            });
+
+        }else{
+            tt.navigateTo({
+                url: '../detail/' + e.currentTarget.dataset.channel + 'detail?id=' + e.currentTarget.dataset.id
+            });
+        }
+
+
+     
       
 
 

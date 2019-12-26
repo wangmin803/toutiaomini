@@ -1,4 +1,7 @@
 // pages/contactus/contactus.js
+
+
+      const app = getApp();
 Page({
   callPhone: function () {
     tt.makePhoneCall({
@@ -16,6 +19,9 @@ Page({
         }
       }
     });
+
+        app.setNbt('all');
+
     
 
   },

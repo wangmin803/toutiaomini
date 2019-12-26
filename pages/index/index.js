@@ -6,6 +6,7 @@ Page({
   data: {},
   onLoad: function () {},
     onShow: function () {
+        app.setNbt('all');
 
        
      

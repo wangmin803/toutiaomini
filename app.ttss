@@ -1,4 +1,4 @@
-@import 'assets/wxss/weui.css';
+@import 'assets/wxss/weui.ttss';
 page{
     background-color: #F8F8F8;
     font-size: 16px;

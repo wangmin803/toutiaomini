@@ -1,8 +1,8 @@
-var util = require('../../utils/util.js');
-var network_util = require('../../utils/network_util.js');
-var json_util = require('../../utils/json_util.js');
-  const app = getApp();
+var util = require('../../../utils/util.js');
+var network_util = require('../../../utils/network_util.js');
+var json_util = require('../../../utils/json_util.js');
 
+  const app = getApp();
 Page({
     data: {
     id: "",
@@ -38,9 +38,8 @@ Page({
       publishDateString:  res.publishDateString.substring(0,12),
       newsContent: res.newsContent,
     })
-
-       app.setNbt('sbzc');
-
+    app.setNbt('rjzzq');
+    
         
       }).catch((res) => { console.log(res) })
 

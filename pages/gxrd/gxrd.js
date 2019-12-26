@@ -13,9 +13,8 @@ Page({
     onShow: function() {
         // 监听页面显示的生命周期函数
                
-           tt.setNavigationBarTitle({
-          title: "山西高新技术企业认定,太原高新认定"
-      })
+      
+        app.setNbt('gqrd');
     },
     onHide: function() {
         // 监听页面隐藏的生命周期函数

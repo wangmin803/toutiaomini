@@ -18,9 +18,8 @@ Page({
     onShow: function() {
         // 监听页面显示的生命周期函数
               
-       tt.setNavigationBarTitle({
-          title: "山西注册商标,太原商标注册"
-      })
+
+        app.setNbt('sbzc');
     },
     
     goMoredSbzc: function () {

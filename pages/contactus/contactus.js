@@ -4,18 +4,18 @@
       const app = getApp();
 Page({
   callPhone: function () {
-    tt.makePhoneCall({
+    wx.makePhoneCall({
       phoneNumber: "15935154726"
     });
   }, onShow: function () {
-    tt.getStorage({
+    wx.getStorage({
       key: "contactus_bottom",
       success: function (res) {
         if (res.data == "1") {
-          tt.pageScrollTo({
+          wx.pageScrollTo({
             scrollTop: 800
           });
-          tt.removeStorage({ key: "contactus_bottom" });
+          wx.removeStorage({ key: "contactus_bottom" });
         }
       }
     });
@@ -31,7 +31,7 @@ Page({
       path: '/pages/contactus/contactus'
     };
   }, addPhone: function () {
-    tt.addPhoneContact({
+    wx.addPhoneContact({
       firstName: '王经理', //联系人姓名 
       weChatNumber: "mumengmeng",
       mobilePhoneNumber: '13835016858', //联系人手机号  

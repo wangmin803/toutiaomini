@@ -18,21 +18,21 @@ App({
     },
 
   goContactus: function () {
-     tt.switchTab({
+     wx.switchTab({
           url: '../contactus/contactus'
         });
 
   },
 
   goSbzc: function () {
-       tt.switchTab({
+       wx.switchTab({
           url: '../sbzc/sbzc'
         });
   },
 
 
    goGxrd: function () {
-      tt.switchTab({
+      wx.switchTab({
           url: '../gxrd/gxrd'
         });
   },
@@ -40,7 +40,7 @@ App({
 
         goMoreList: function (type) {
           
-               tt.navigateTo({
+               wx.navigateTo({
                         url: '../gxrdlist/gxrdlist?type='+type
                     });``
         
@@ -48,27 +48,27 @@ App({
   },
      setNbt: function (type) {
                 if(type=='gqrd'){
-                            tt.setNavigationBarTitle({
+                            wx.setNavigationBarTitle({
                                 title: "山西高新技术企业认定,太原高企认证"
                             })
                     }
                         else if(type=='sbzc'){
-                            tt.setNavigationBarTitle({
+                            wx.setNavigationBarTitle({
                                 title: "山西商标注册,太原商标注册"
                             })
                     }
                         else if(type=='rjzzq'){
-                            tt.setNavigationBarTitle({
+                            wx.setNavigationBarTitle({
                                 title: "山西软件著作权,太原软件著作权,软件著作权申请,软件著作权办理"
                             })
                     }   else if(type=='all'){
-                            tt.setNavigationBarTitle({
+                            wx.setNavigationBarTitle({
                                 title: "山西高新技术企业认定,太原软件著作权,商标注册"
                             })
                     }
                     
                     else {
-                            tt.setNavigationBarTitle({
+                            wx.setNavigationBarTitle({
                                 title: "山西软件著作权,太原软件著作权,软件著作权申请,软件著作权办理"
                             })
                     }

@@ -38,7 +38,7 @@ Page({
     },
     onUnload: function () {
 
-        tt.switchTab({
+        wx.switchTab({
             url: '/pages/gxrd/gxrd'
         });
     },
@@ -47,12 +47,12 @@ Page({
     goDetail: function (e) {
 
         if(e.currentTarget.dataset.channel=='ruanzhujiaji'||e.currentTarget.dataset.channel=='ruanzhushenqing'||e.currentTarget.dataset.channel=='ruanzhudaiban'||e.currentTarget.dataset.channel=='ruanzhubanli'){
-            tt.navigateTo({
+            wx.navigateTo({
                 url: '../detail/' + e.currentTarget.dataset.channel + '/'+ e.currentTarget.dataset.channel+'?id=' + e.currentTarget.dataset.id
             });
 
         }else{
-            tt.navigateTo({
+            wx.navigateTo({
                 url: '../detail/' + e.currentTarget.dataset.channel + 'detail?id=' + e.currentTarget.dataset.id
             });
         }
@@ -115,7 +115,7 @@ Page({
 
                 let d = json_util.mapToJson(util.tokenAndKo(map));
 
-                var url1 = 'https://www.jzn360.com/Manage/News/table1.do?limit=12&channelCode=' + type + '&page=' + this.data.page;
+                var url1 = 'https://www.jzn360.com/Manage/News/table1.do?limit=22&channelCode=' + type + '&page=' + this.data.page;
                 var that = this;
                 let addList = "";
                 let newList = "";

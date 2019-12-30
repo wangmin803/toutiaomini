@@ -9,7 +9,7 @@
 function _get(url, success, fail) {
 
   console.log("------start---_get----");
-  tt.request({
+  wx.request({
     url: url,
     header: {
       // 'Content-Type': 'application/json'
@@ -32,7 +32,7 @@ function _get(url, success, fail) {
  */
 function _post(url, data, success, fail) {
   console.log("----_post--start-------");
-  tt.request({
+  wx.request({
     url: url,
     header: {
       'content-type': 'application/x-www-form-urlencoded'
@@ -57,7 +57,7 @@ function _post(url, data, success, fail) {
  */
 function _post1(url, data, success, fail) {
   console.log("----_post--start-------");
-  tt.request({
+  wx.request({
     url: url,
     header: {
         'X-Requested-With':'X-Requested-With',
@@ -83,7 +83,7 @@ function _post1(url, data, success, fail) {
 */
 function _post_json(url, data, success, fail) {
   console.log("----_post--start-------");
-  tt.request({
+  wx.request({
     url: url,
     // header: {
     //     'content-type': 'application/json',
@@ -102,7 +102,7 @@ function _post_json(url, data, success, fail) {
 }
 function _getnet(url,data) {
   return new Promise(function (resolve, reject) {
-    tt.request({
+    wx.request({
       url: url,
     data: data,
       success: (res) => {
